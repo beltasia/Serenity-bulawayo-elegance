@@ -63,6 +63,7 @@ const Navigation = () => {
                   ? 'bg-luxury-bronze hover:bg-luxury-bronze/90 text-white' 
                   : 'bg-luxury-gold hover:bg-luxury-gold/90 text-luxury-bronze'
               }`}
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Book Now
             </Button>
@@ -95,7 +96,10 @@ const Navigation = () => {
               ))}
               <Button 
                 className="w-full bg-luxury-bronze hover:bg-luxury-bronze/90 text-white mt-4"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 Book Now
               </Button>

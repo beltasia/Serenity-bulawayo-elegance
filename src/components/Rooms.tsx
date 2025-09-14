@@ -72,6 +72,7 @@ const Rooms = () => {
                   <Button 
                     variant="outline" 
                     className="border-luxury-bronze text-luxury-bronze hover:bg-luxury-bronze hover:text-white"
+                    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   >
                     Book Now
                   </Button>

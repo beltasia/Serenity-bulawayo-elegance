@@ -30,6 +30,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="bg-luxury-gold hover:bg-luxury-gold/90 text-luxury-bronze font-semibold px-8 py-4 text-lg luxury-transition"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Book Your Stay
           </Button>
@@ -37,6 +38,7 @@ const Hero = () => {
             size="lg" 
             variant="outline"
             className="border-2 border-white text-white hover:bg-white hover:text-luxury-bronze font-semibold px-8 py-4 text-lg luxury-transition"
+            onClick={() => document.getElementById('rooms')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Explore Rooms
           </Button>

@@ -78,6 +78,10 @@ const Contact = () => {
             <Button 
               size="lg" 
               className="bg-luxury-bronze hover:bg-luxury-bronze/90 text-white font-semibold px-8 py-4 text-lg luxury-transition"
+              onClick={() => {
+                // Open phone dialer
+                window.location.href = 'tel:+263291234567';
+              }}
             >
               Make a Reservation
             </Button>
@@ -85,6 +89,10 @@ const Contact = () => {
               size="lg" 
               variant="outline"
               className="border-2 border-luxury-bronze text-luxury-bronze hover:bg-luxury-bronze hover:text-white font-semibold px-8 py-4 text-lg luxury-transition"
+              onClick={() => {
+                // Open email client
+                window.location.href = 'mailto:reservations@banfflodge.co.zw?subject=Information Request&body=Hello, I would like to request information about Banff Lodge.';
+              }}
             >
               Request Information
             </Button>
