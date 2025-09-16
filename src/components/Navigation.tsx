@@ -36,7 +36,7 @@ const Navigation = () => {
             <span className={`luxury-transition ${
               isScrolled ? 'text-luxury-bronze' : 'text-white'
             }`}>
-              Banff Lodge
+              Serenity
             </span>
           </div>
 
