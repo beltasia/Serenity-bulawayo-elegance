@@ -37,7 +37,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             variant="outline"
-            className="border-2 border-white text-white hover:bg-white hover:text-luxury-bronze font-semibold px-8 py-4 text-lg luxury-transition"
+            className="border-2 border-white bg-white/20 backdrop-blur-sm text-white hover:bg-white hover:text-luxury-bronze font-semibold px-8 py-4 text-lg luxury-transition"
             onClick={() => document.getElementById('rooms')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Explore Rooms
