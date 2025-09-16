@@ -101,6 +101,10 @@ export default {
         "float": {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" }
+        },
+        "pan-right": {
+          "0%": { transform: "scale(1.1) translateX(-5%)" },
+          "100%": { transform: "scale(1.1) translateX(5%)" }
         }
       },
       animation: {
@@ -111,6 +115,7 @@ export default {
         "scale-in": "scale-in 0.5s ease-out",
         "slide-in-right": "slide-in-right 0.7s ease-out",
         "float": "float 3s ease-in-out infinite",
+        "pan-right": "pan-right 20s ease-in-out infinite alternate",
       },
     },
   },

@@ -5,11 +5,11 @@ const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <img 
           src={heroImage} 
-          alt="Banff Lodge Bulawayo exterior at golden hour"
-          className="w-full h-full object-cover"
+          alt="Serenity Lodge Bulawayo exterior at golden hour"
+          className="w-full h-full object-cover animate-pan-right"
         />
         <div className="absolute inset-0 overlay-gradient"></div>
       </div>
@@ -17,9 +17,9 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
-          Banff Lodge
+          Serenity
           <span className="block text-luxury-gold font-medium text-3xl md:text-4xl mt-2">
-            Bulawayo
+            Lodge Bulawayo
           </span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-luxury-cream font-light leading-relaxed animate-fade-in delay-300">
